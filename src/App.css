@@ -1,0 +1,1430 @@
+* {
+    font-family: Chillax, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+    font-family: 'Chillax';
+    src: local('Chillax'), url(./fonts/Chillax/OTF/Chillax-Light.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Chillax-Bold';
+    src: local('Chillax-Bold'), url(./fonts/Chillax/OTF/Chillax-Bold.otf) format('truetype');
+}
+
+body {
+    background-image: url('./assets/img/dashboard_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1070px !important;
+}
+
+
+/*Topbar*/
+
+.navbar-expand-lg {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 !important;
+}
+
+.logo-pic {
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar>.container-fluid {
+    justify-content: left !important;
+}
+
+.navbar-nav {
+    margin-left: 1%;
+    flex: 0 0 49%;
+}
+
+.nav-link {
+    text-align: center;
+    flex: 0 0 13%;
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b9b9b9 !important;
+    font-family: Chillax;
+}
+
+.nav-link.active {
+    font-weight: 800 !important;
+    color: white !important;
+}
+
+.nav-link:hover {
+    font-weight: 800 !important;
+    color: white !important;
+}
+
+.menu-pic-btn {
+    flex: 0 0 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.menu-pic {
+    padding-right: 5px;
+}
+
+.menu-pic img {
+    width: 22%;
+    border-radius: 0.3rem;
+}
+
+.wallet-pic-btn {
+    flex: 0 0 17%;
+    justify-content: end;
+	gap: 25px;
+}
+
+.wallet-pic-btn button span {
+    vertical-align: middle;
+}
+
+.btn {
+    font-size: 12px !important;
+    font-weight: 800 !important;
+}
+
+.btn-primary {
+    border: none !important;
+}
+
+.menubtn-group {
+    background-color: rgb(16, 21, 28) !important;
+}
+
+.connectwallet-pic {
+    width: 18%;
+    border-radius: 0.3rem;
+}
+
+.connectwallet-btn {
+    width: 70%;
+	padding: 0;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, rgb(55, 0, 255), rgb(228, 43, 172));
+}
+
+.connectwallet-btn:hover {
+    background-image: linear-gradient(to right, rgb(228, 43, 172), rgb(55, 0, 255));
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+#dropdown-menu-align-end {
+    height: 100% !important;
+	
+}
+
+#dropdown-menu-align-end:hover {
+    background-color: #0043c0e0 !important;
+}
+
+.dropdown-menu-end {
+    background-color: rgba(0, 0, 0, 0.589) !important;
+    padding: 0;
+}
+
+.dropdown-menu-end a {
+    font-size: 13px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('./assets/img/ic-times.9b2c38139b665f1bca9fc0b3fd918fca.svg') !important;
+}
+
+.offcanvas {
+    background-color: rgb(21, 62, 103) !important;
+}
+
+.logo-pic-offcanvas {
+    width: 100%;
+}
+
+.nav-offcanvas {
+    font-size: 25px;
+    text-align: left !important;
+}
+
+#dropdown-item-button {
+    text-align: left;
+    border: none !important;
+    width: 100% !important;
+    background: none !important;
+    font-size: 25px !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-menu.show {
+    width: 100% !important;
+    background-color: rgb(21, 62, 103) !important;
+    font-size: 18px !important;
+    border: none !important;
+}
+
+.token-price {
+    color: white;
+    font-size: 23px;
+    margin-top: 250px;
+    font-weight: 800;
+    padding-left: 13px;
+}
+
+.token-price-btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 4%;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    justify-content: start;
+}
+
+.menu-pic-offcanvas {
+    width: 25% !important;
+    padding: 0.5rem 0.6rem;
+}
+
+.menu-pic-offcanvas img {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+}
+
+.dropmenu {
+    padding: 10px;
+    background-color: rgba(3, 3, 3, 0.842) !important;
+}
+
+
+/*Dashboard*/
+
+.dashboard-title {
+    margin-top: 4%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    font-family: Chillax-Bold;
+}
+
+.dashboard-subtitle {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 18px;
+    font-family: Chillax;
+}
+
+.total_value {
+    font-family: Chillax-Bold;
+    margin-top: 30px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(2, 46, 89) 100%, rgba(21, 62, 103, 0.38) 50%, rgba(74, 125, 175, 0.56) 0%);
+}
+
+.total_value span {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(64, 255, 90);
+    font-family: Chillax-Bold;
+}
+
+.total_value::before {
+    content: "";
+    position: absolute;
+    width: 94px;
+    height: 92px;
+    left: 12px;
+    bottom: 2px;
+    background-image: url('./assets/img/bg-tvl-left.7449613aab9e63ff22be.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.total_value::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 95px;
+    right: 12px;
+    top: 0px;
+    background-image: url('./assets/img/FRNaserhdn3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.FSM {
+    width: 99%;
+    margin-top: 20px;
+    padding: 10px 12px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+}
+
+.Staking-body,
+.Farm-body {
+    border: none !important;
+    background: none !important;
+}
+
+.Staking-body {
+    padding-bottom: 40px !important;
+}
+
+.Staking-body-content {
+    justify-content: space-between !important;
+}
+
+@media(max-width: 1000px) {
+    .FSM-L-R,
+    .total_value {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .FSM {
+        width: 100% !important;
+    }
+}
+
+.FSM-L-R {
+    display: flex;
+    padding: 0;
+}
+
+.FSM-L {
+    margin-right: auto;
+}
+
+.FSM-R {
+    margin-left: auto;
+}
+
+.FSM-header,
+.Staking-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(160, 231, 255);
+}
+
+.FSM-header img {
+    border-radius: 0.6rem;
+    margin-right: 10px;
+    width: 52px;
+    height: 52px;
+}
+
+.Staking-header img {
+    border-radius: 0.6rem;
+    margin-right: 10px;
+    width: 25px;
+    height: 45px;
+}
+
+.FSMSymbol {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(160, 231, 255);
+    font-family: Chillax-Bold;
+}
+
+.FSMViewcontract {
+    text-decoration: underline;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f700d6 !important;
+    font-family: Chillax-Bold;
+}
+
+.FSMPrice {
+    margin-left: auto;
+    text-align: right;
+    color: white;
+    font-size: 15px;
+}
+
+.FSMPrice span {
+    color: rgb(64, 255, 90);
+}
+
+.FSM-body {
+    margin-top: 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(20, 57, 94);
+}
+
+.FSM-body-content {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.divideline {
+    margin: 14px 10px 4px;
+    flex: 1 1 0%;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.16);
+}
+
+.FSM-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.FSM-wallet-btn {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 100px !important;
+    border: none !important;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    cursor: pointer;
+}
+
+.FSM-wallet-btn:hover,
+.FSM-mint-btn:hover {
+    background-color: #82848630;
+}
+
+.FSM-buy-btn {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0px 10px;
+    border: none !important;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(55, 0, 255), rgb(228, 43, 172));
+    cursor: pointer;
+}
+
+.FSM-buy-btn:hover {
+    background-image: linear-gradient(to right, rgb(228, 43, 172), rgb(55, 0, 255));
+}
+
+.FSM-buy-btn a {
+    color: white;
+    font-size: 16px;
+    font-family: Chillax-Bold;
+}
+
+.FSM-mint-btn {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 7px 10px;
+    border: none !important;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(60, 92, 160) !important;
+    font-size: 16px;
+    font-family: Chillax-Bold;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.FSM-buy-btn-group {
+    display: flex;
+    align-items: center;
+}
+
+.StakingSymbol {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: Chillax-Bold;
+}
+
+.Collat-outline {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.colla-img {
+    width: 10%;
+}
+
+.colla-img img {
+    width: 100%;
+}
+
+.colla-content {
+    font-weight: 900;
+    padding-left: 10px;
+    color: white;
+    font-family: Chillax-Bold;
+    font-size: 14px;
+}
+
+.lastupdate {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.colla-number {
+    margin-left: auto;
+    font-family: Chillax-Bold;
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.modal-header {
+    border-bottom: none !important;
+    color: white;
+    font-family: Chillax-Bold;
+    padding-left: 23px;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 19px;
+    font-family: 'Chillax-Bold';
+}
+
+.modal-content {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103) !important;
+}
+
+.modal-content::before {
+    z-index: -9999;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    width: 83px;
+    height: 69px;
+    background-image: url('./assets/img/Yradnfsodf0000.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.modal-content::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 50px;
+    background-image: url('./assets/img/Friynasdft101.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.spiderpic {
+    width: 12%;
+    margin-right: 25px;
+}
+
+.walletbox-outline {
+    width: 100%;
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(20, 57, 94);
+}
+
+.btn-close {
+    z-index: 9999;
+    background: transparent url('./assets/img/Closebtn.svg') center/1em auto no-repeat !important;
+}
+
+.walletbox {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem 0.5rem;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.walletbox span {
+    padding-left: 15px !important;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.walletbox span:hover {
+    color: #f700d6;
+}
+
+.walletbox:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.walletpic-size {
+    width: 25px;
+    height: 25px;
+}
+
+
+/*Mint*/
+
+#mint {
+    margin-top: 100px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mint-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.mint-header::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    width: 115px;
+    height: 113px;
+    background-image: url('./assets/img/rrrrrrrrrrr2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.mint-title {
+    color: white;
+    font-size: 28px;
+    font-family: Chillax-Bold;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+}
+
+.mint-FTM {
+    position: relative;
+    padding: 15px 15px 18px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+}
+
+.FTM-section {
+    margin-top: 10px;
+    padding: 10px 12px 12px;
+    border-radius: 15px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(19, 74, 130);
+}
+
+.FTM-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    color: rgb(182, 196, 198);
+}
+
+.FTM-title-L span {
+    font-size: 18px;
+    font-family: Chillax-Bold;
+}
+
+.FTM-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.FTM-form img {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+
+.form-control {
+    background: none !important;
+    border: none !important;
+    font-size: 29px !important;
+    font-family: 'Chillax-Bold';
+    color: white !important;
+}
+
+.mint-arrow {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.XFTM-section {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(20, 57, 94);
+    border: none;
+    padding: 10px 12px 12px;
+}
+
+.XFTM-show {
+    width: 100%;
+    padding: 0.375rem, 0.75rem;
+    background: none !important;
+    border: none !important;
+    font-size: 29px !important;
+    font-family: 'Chillax-Bold';
+    color: rgb(71, 255, 71) !important;
+}
+
+.mint-fee {
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Chillax-Bold';
+    color: white;
+}
+
+.slipage-group {
+    display: flex;
+    align-items: center;
+}
+
+.slipage-show,
+.slipage-show-active {
+    margin-right: 10px;
+    text-align: center;
+    width: 60px;
+    border-radius: 8px;
+    height: 30px;
+    color: white;
+    border: 1px solid rgb(58, 80, 114);
+    cursor: pointer;
+}
+
+.slipage-show:hover,
+.slipage-show-active {
+    border-color: #f700d6;
+}
+
+.input-group {
+    padding: 0;
+    width: 75px;
+    border: 1px solid rgb(58, 80, 114);
+    height: 30px;
+    border-radius: 10px;
+}
+
+.slipage-form {
+    padding: 0;
+    font-size: 18px !important;
+    height: 29px;
+    padding-left: 13px;
+}
+
+.slipage-form,
+.input-group-text {
+    font-size: 20px !important;
+    font-family: Chillax !important;
+    font-weight: 100 !important;
+}
+
+.input-group-text {
+    width: 20px;
+    background: none;
+    border: none;
+    text-align: center;
+    color: white;
+    border-left: 1px solid rgb(110, 110, 110);
+    padding: 0;
+    height: 27px;
+}
+
+.connectwallet-btn-ftm {
+    margin-top: 10px;
+    width: 100% !important;
+    padding: 10px 18px !important;
+    font-size: 16px !important;
+}
+
+.plusbtn {
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 24px;
+    left: 50%;
+    top: 22.5%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(27, 87, 147);
+    z-index: 0;
+}
+
+.plusbtn-redeem {
+    top: 41.5%;
+}
+
+#redeem {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+
+/*Farm*/
+
+#farm,
+#staking {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.farm-title {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.farm-title span {
+    font-size: 28px;
+    font-family: Chillax-Bold;
+}
+
+.farm-title-R {
+    display: flex;
+    align-items: center;
+}
+
+.farm-title-R span {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.farm-title-R img {
+    width: 25px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.claimbtn {
+    padding: 1px 5px !important;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.accordion-item {
+    background-color: rgb(21, 62, 103);
+    margin-bottom: 15px;
+    border: none;
+    padding-top: 0px;
+    border-radius: 20px !important;
+}
+
+.accordion-button {
+    background: transparent !important;
+    color: white !important;
+    border: none !important;
+}
+
+.farm-body-header-outline {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.farm-body-header-outline-item {
+    flex: 1 0 0;
+}
+
+.farm-body-header-outline-item span {
+    margin-left: 10px;
+    font-family: Chillax-Bold;
+}
+
+.farm-body-header-outline-item img {
+    width: 30px;
+    border-radius: 10px;
+}
+
+.farm-earn {
+    font-size: 13px;
+    color: rgb(201, 201, 201);
+    font-weight: normal;
+}
+
+.farm-body-header-outline-item-ration div {
+    padding: 5px 0px;
+}
+
+.accordion-body,
+.deposit-bal,
+.reward-ratio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.deposit-form {
+    flex: 0 0 30%;
+    padding: 16px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(20, 57, 94);
+}
+
+.deposit-bal-form .form-control {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    border: 1px solid rgb(39, 92, 138) !important;
+    background-color: rgb(19, 74, 130) !important;
+}
+
+.deposit-withdraw-btn {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.deposit-btn {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-family: Chillax-Bold;
+}
+
+.deposit-withdraw-all,
+.deposit-withdraw {
+    margin-top: 10px;
+    border-radius: 10px;
+    pointer-events: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 15px;
+    font-family: Chillax-Bold;
+    font-size: 14px;
+}
+
+.deposit-withdraw {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.reward-ratio {
+    margin-top: 15px;
+}
+
+.reward-ratio img {
+    width: 30px;
+    border-radius: 10px;
+}
+
+.reward-ratio span,
+a {
+    font-family: Chillax-Bold;
+}
+
+.reward-ratio a {
+    padding-top: 15px !important;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(224, 28, 225) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.nonofficial {
+    color: white;
+    font-family: Chillax-Bold;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.nonofficial-farm {
+    width: 320px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+}
+
+.nonofficial-farm-L {
+    display: flex;
+    align-items: center;
+}
+
+.nonofficial-farm-L img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.nonofficial-farm-M {
+    margin-left: 20px;
+    color: white;
+}
+
+.nonofficial-farm-M img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+
+/*Staking*/
+
+.staking-outline {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.staking-outline-L {
+    flex: 0 0 40%;
+}
+
+.staking-outline-R {
+    flex: 0 0 56%;
+}
+
+.total-FSM {
+    margin-top: 20px;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+    color: white;
+}
+
+.total-FSM-body {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.total-FSM-body:not(:last-child) {
+    border-bottom: 1px solid rgb(39, 92, 138);
+}
+
+.total-FSM-body div {
+    display: flex;
+    align-items: center;
+}
+
+.total-FSM-body img {
+    width: 50px;
+    height: 50px;
+    border: 10px;
+    margin-right: 10px;
+}
+
+.total-FSM-body span {
+    font-family: Chillax-Bold;
+    font-size: 20px;
+}
+
+.stake-FSM {
+    font-size: 20px;
+    font-family: Chillax-Bold;
+    padding-top: 10px;
+}
+
+.stake-FSM-describe {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.staking-timer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(19, 74, 130);
+}
+
+.staking-timer img {
+    width: 40px;
+    height: 40px;
+}
+
+.staking-counter {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.staking-counter-piece {
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-L {
+    text-align: center;
+    display: block !important;
+}
+
+.counter-N {
+    font-family: Chillax-Bold;
+    font-size: 30px;
+}
+
+.counter-R {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 800;
+    font-size: 35px;
+    justify-content: center !important;
+}
+
+.lock-FSM {
+    margin-top: 20px;
+    padding: 10px 20px 20px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+    color: white;
+}
+
+.lock-FSM-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lock-FSM-logo {
+    font-size: 20px;
+    font-family: Chillax-Bold;
+}
+
+.lock-FSM-ratio {
+    color: #0cf10ce0;
+}
+
+.connect-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.claim-FSM {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+}
+
+.claim-row {
+    margin-top: 10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.claim-row:not(:last-child) {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(39, 92, 138);
+}
+
+.claim-row-L {
+    font-size: 20px;
+}
+
+.claim-row-R {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.claim-row-R img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.claim-row-R span {
+    font-size: 20px;
+}
+
+.claim-row-L-bottom {
+    font-size: 13px;
+}
+
+.claim-row-L-bottom span {
+    color: red;
+}
+
+.claim-row-R-claim {
+    font-family: Chillax-Bold;
+    color: #c7c7c7c0;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.FSM-vest {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(21, 62, 103);
+    color: white;
+}
+
+.FSM-vest p {
+    text-align: right;
+    color: #8d8d8de0;
+    text-decoration: underline;
+}
+
+.FSM-vest-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FSM-vest-title-L {
+    font-family: Chillax-Bold;
+    font-size: 20px;
+}
+
+.FSM-vest-body {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid rgb(39, 92, 138);
+    background-color: rgb(20, 57, 94);
+}
+
+.FSM-vest-body img {
+    width: 70px;
+    height: 70px;
+}
+
+.FSM-vest-body p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/*Footer*/
+
+.footer {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer span img {
+    width: 2%;
+}
+
+@media(max-width: 1300px) {
+    .navbar-toggler {
+        display: block !important;
+    }
+    .menu-pic-btn,
+    .menu-item,
+    .more-btn {
+        display: none;
+    }
+    .navbar {
+        flex: 1 0 0;
+    }
+    .wallet-pic-btn {
+        flex: 1 0 0 !important;
+        justify-content: end;
+    }
+    .btn {
+        width: 30% !important;
+        font-size: 20px !important;
+    }
+    #mint,
+    #redeem {
+        width: 60%;
+    }
+    .connectwallet-btn-ftm {
+        width: 100% !important;
+    }
+    .farm-body-header-outline {
+        display: block;
+        padding: 5px 10px;
+    }
+    .farm-body-header-outline-item-ration {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .deposit-withdraw-all,
+    .deposit-withdraw {
+        font-size: 10px;
+    }
+    .connectwallet-pic-offcanvas {
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 1400px) {
+    .connectwallet-pic-offcanvas {
+        width: 100% !important;
+    }
+    .deposit-withdraw-all,
+    .deposit-withdraw {
+        font-size: 10px;
+    }
+    .staking-outline {
+        display: block;
+    }
+    .staking-timer {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 992px) {
+    .connectwallet-pic-offcanvas {
+        width: 100% !important;
+    }
+    .connect-btn-offcanvas {
+        width: 100% !important;
+    }
+    .connectwallet-btn-ftm {
+        width: 100% !important;
+    }
+    .farm-title {
+        display: block;
+    }
+    .farm-title-R {
+        margin-bottom: 10px;
+    }
+    .farm-title-R span {
+        padding-left: 0;
+    }
+    .accordion-body {
+        display: block;
+    }
+    .deposit-form {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 768px) {
+    .btn {
+        width: 100% !important;
+        font-size: 20px !important;
+    }
+    #mint,
+    #redeem {
+        width: 100%;
+    }
+}
+
+@media(min-width: 2700px) {
+    .navbar {
+        width: 100% !important;
+    }
+    .nav-link {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 18px !important;
+    }
+}
